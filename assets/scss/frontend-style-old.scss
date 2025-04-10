@@ -1,0 +1,193 @@
+// Variables
+$text-active-secondary: #3E4246;
+$text-inactive-secondary: #282C2E;
+$fill-neutral-primary: #EEF1F5;
+$fill-neutral-secondary: #FFFFFF;
+$border-active-primary: #C1C9D2;
+$border-active-secondary: #EEF1F5;
+$pg-gray-10: #EEF1F5;
+$pg-gray-20: #C1C9D2;
+$pg-gray-30: #A7B0B8;
+$pg-gray-60: #3E4246;
+$pg-gray-70: #282C2E;
+$pg-gray-80: #1C1F22;
+$pg-gray-100: #040506;
+
+// Padding variables based on the provided measurements
+$padding-overall-sides: 24px;
+$padding-content-vertical: 20px;
+$padding-title-row: 12px;
+$padding-data-row: 16px;
+
+// Typography variables
+$font-size-base: 16px;
+$line-height: 1.4; // 140%
+$char-spacing: -0.025em; // -2.5%
+
+// Border radius
+$border-radius: 10px;
+
+// Custom fonts
+@mixin pg-font-label-m-normal {
+  font-family: 'Poppins', sans-serif !important;
+  font-size: $font-size-base !important;
+  font-weight: 600 !important; // Semibold
+  line-height: $line-height !important;
+  letter-spacing: $char-spacing !important;
+}
+
+@mixin pg-font-body-s-normal {
+  font-family: 'Inter', sans-serif !important;
+  font-size: $font-size-base !important;
+  font-weight: 400 !important; // Regular
+  line-height: $line-height !important;
+  letter-spacing: $char-spacing !important;
+}
+
+// Root variables
+:root {
+  --text-active-secondary: #{$text-active-secondary};
+  --text-inactive-secondary: #{$text-inactive-secondary};
+  --fill-neutral-primary: #{$fill-neutral-primary};
+  --fill-neutral-secondary: #{$fill-neutral-secondary};
+  --border-active-primary: #{$border-active-primary};
+  --border-active-secondary: #{$border-active-secondary};
+  --pg-gray-10: #{$pg-gray-10};
+  --pg-gray-20: #{$pg-gray-20};
+  --pg-gray-30: #{$pg-gray-30};
+  --pg-gray-60: #{$pg-gray-60};
+  --pg-gray-70: #{$pg-gray-70};
+  --pg-gray-80: #{$pg-gray-80};
+  --pg-gray-100: #{$pg-gray-100};
+}
+
+table {
+  width: 100% !important;
+  border-collapse: collapse !important;
+  font-size: $font-size-base !important;
+  // Overall table padding
+  padding-left: $padding-overall-sides !important;
+  padding-right: $padding-overall-sides !important;
+  border-radius: $border-radius !important;
+  
+  // Table Headers
+  th {
+    @include pg-font-label-m-normal;
+    background-color: $fill-neutral-primary !important;
+    border: 1px solid $border-active-primary !important;
+    text-align: left !important;
+    // Title row padding
+    padding: $padding-title-row !important;
+    
+    // Round top corners of first row
+    &:first-child {
+    border-top-left-radius: $border-radius !important;
+    }
+    
+    &:last-child {
+    border-top-right-radius: $border-radius !important;
+    }
+  }
+  
+  // Table Cells
+  td {
+    @include pg-font-body-s-normal;
+    border: 1px solid $border-active-primary !important;
+    text-align: left !important;
+    color: $text-inactive-secondary !important;
+    // Data row padding
+    padding: $padding-data-row !important;
+  }
+  
+  // Row styles
+  tr {
+    &:nth-child(even) {
+      background-color: $fill-neutral-secondary !important;
+    }
+    
+    &:nth-child(odd) {
+      background-color: $fill-neutral-primary !important;
+    }
+    
+    // Title Row (first row)
+    &:first-child {
+      td {
+        // @include pg-font-label-m-normal;
+        color: $text-active-secondary !important;
+        padding-top: $padding-title-row !important;
+        padding-bottom: $padding-title-row !important;
+      }
+    }
+    
+    // Dark Divider Row
+    &:nth-child(2) {
+      background-color: $pg-gray-100 !important;
+      height: 10px !important;
+    }
+    
+    // Title Row Background
+    &:nth-child(3) {
+      background-color: $pg-gray-10 !important;
+      td {
+        // @include pg-font-label-m-normal;
+        padding-top: $padding-title-row !important;
+        padding-bottom: $padding-title-row !important;
+      }
+    }
+    &:last-child {
+        td {
+            &:first-child {
+            border-bottom-left-radius: $border-radius !important;
+            }
+            
+            &:last-child {
+            border-bottom-right-radius: $border-radius !important;
+            }
+        }
+    }
+
+  }
+}
+
+// Typography classes
+.pg-font-label-m-normal {
+  @include pg-font-label-m-normal;
+}
+
+.pg-font-body-s-normal {
+  @include pg-font-body-s-normal;
+}
+
+// Add vertical content padding to all cells
+.table-container {
+  padding-top: $padding-content-vertical !important;
+  padding-bottom: $padding-content-vertical !important;
+}
+
+// Highlight Effect
+.highlight {
+  background-color: $pg-gray-30 !important;
+}
+
+// Button Style
+.button-token {
+  background-color: #00AA00 !important;
+  color: white !important;
+  font-weight: bold !important;
+  padding: 5px !important;
+  border-radius: 3px !important;
+}
+.elementor-shortcode{
+    overflow-y: scroll;
+}
+.dt-paging {
+    nav{
+        border-radius: 20px;
+        background: #EBF0F5;
+        button{
+            &.dt-paging-button{
+                border-radius: 50% !important;
+            }
+        }
+    }
+}

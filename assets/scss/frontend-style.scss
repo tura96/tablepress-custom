@@ -1,0 +1,592 @@
+// Base variables - Light Mode
+$text-active-secondary-light: #3E4246;
+$text-inactive-secondary-light: #282C2E;
+$fill-neutral-primary-light: #EEF1F5;
+$fill-neutral-secondary-light: #FFFFFF;
+$border-active-primary-light: #C1C9D2;
+$border-active-secondary-light: #EEF1F5;
+$pg-gray-10-light: #EEF1F5;
+$pg-gray-20-light: #C1C9D2;
+$pg-gray-30-light: #A7B0B8;
+$pg-gray-60-light: #3E4246;
+$pg-gray-70-light: #282C2E;
+$pg-gray-80-light: #1C1F22;
+$pg-gray-100-light: #040506;
+
+// Dark Mode variables
+$text-active-secondary-dark: #D1D5DB;
+$text-inactive-secondary-dark: #C1C9D2;
+$fill-neutral-primary-dark: #040506;
+$fill-neutral-secondary-dark: #1C1F22;
+$border-active-primary-dark: #4B5563;
+$border-active-secondary-dark: #282C2E;
+$pg-gray-10-dark: #1F2937;
+$pg-gray-20-dark: #4B5563;
+$pg-gray-30-dark: #6B7280;
+$pg-gray-60-dark: #D1D5DB;
+$pg-gray-70-dark: #E5E7EB;
+$pg-gray-80-dark: #F3F4F6;
+$pg-gray-100-dark: #F9FAFB;
+
+// Primary Mode variables
+$text-active-secondary-pr: #FFFFFF;
+$text-inactive-secondary-pr: #282C2E;
+$fill-neutral-primary-pr: #E03C31;
+$fill-neutral-secondary-pr: #FFFFFF;
+$border-active-primary-pr: #FFC7C3;
+$border-active-secondary-pr: #888888;
+$pg-gray-10-pr: #000000;
+$pg-gray-20-pr: #333333;
+$pg-gray-30-pr: #666666;
+$pg-gray-60-pr: #BBBBBB;
+$pg-gray-70-pr: #DDDDDD;
+$pg-gray-80-pr: #EEEEEE;
+$pg-gray-100-pr: #FFFFFF;
+
+// Primary Mode dark variables
+$text-active-secondary-prd: #FFECEB;
+$text-inactive-secondary-prd: #C1C9D2;
+$fill-neutral-primary-prd: #74150F;
+$fill-neutral-secondary-prd: #1C1F22;
+$border-active-primary-prd: #C1C9D2;
+$border-active-secondary-prd: #888888;
+$pg-gray-10-prd: #000000;
+$pg-gray-20-prd: #333333;
+$pg-gray-30-prd: #666666;
+$pg-gray-60-prd: #BBBBBB;
+$pg-gray-70-prd: #DDDDDD;
+$pg-gray-80-prd: #EEEEEE;
+$pg-gray-100-prd: #FFFFFF;
+
+// Secondary 1 Mode variables
+$text-active-secondary-sec1: #FFF8E7;
+$text-inactive-secondary-sec1: #282C2E;
+$fill-neutral-primary-sec1: #E3AA49;
+$fill-neutral-secondary-sec1: #FFF8E7;
+$border-active-primary-sec1: #E3AA49;
+$border-active-secondary-sec1: #FAD48D;
+$pg-gray-10-sec1: #F5EFE7;
+$pg-gray-20-sec1: #D3BFA8;
+$pg-gray-30-sec1: #B19E85;
+$pg-gray-60-sec1: #5F4B32;
+$pg-gray-70-sec1: #4A3B27;
+$pg-gray-80-sec1: #352A1C;
+$pg-gray-100-sec1: #201910;
+
+// Secondary 1 Mode Dark variables
+$text-active-secondary-sec1d: #FFF8E7;
+$text-inactive-secondary-sec1d: #FFF8E7;
+$fill-neutral-primary-sec1d: #A6732B;
+$fill-neutral-secondary-sec1d: #44311B;
+$border-active-primary-sec1d: #A6732B;
+$border-active-secondary-sec1d: #A6732B;
+$pg-gray-10-sec1d: #F5EFE7;
+$pg-gray-20-sec1d: #D3BFA8;
+$pg-gray-30-sec1d: #B19E85;
+$pg-gray-60-sec1d: #5F4B32;
+$pg-gray-70-sec1d: #4A3B27;
+$pg-gray-80-sec1d: #352A1C;
+$pg-gray-100-sec1d: #201910;
+
+// Secondary 2 Mode variables
+$text-active-secondary-sec2: #E8FEFF;
+$text-inactive-secondary-sec2: #282C2E;
+$fill-neutral-primary-sec2: #00CCCC;
+$fill-neutral-secondary-sec2: #E8FEFF;
+$border-active-primary-sec2: #00CCCC;
+$border-active-secondary-sec2: #9EE5E8;
+$pg-gray-10-sec2: #F5EFE7;
+$pg-gray-20-sec2: #D3BFA8;
+$pg-gray-30-sec2: #B19E85;
+$pg-gray-60-sec2: #5F4B32;
+$pg-gray-70-sec2: #4A3B27;
+$pg-gray-80-sec2: #352A1C;
+$pg-gray-100-sec2: #201910;
+
+// Secondary 2 Mode Dark variables
+$text-active-secondary-sec2d: #E8FEFF;
+$text-inactive-secondary-sec2d: #E8FEFF;
+$fill-neutral-primary-sec2d: #007C80;
+$fill-neutral-secondary-sec2d: #153947;
+$border-active-primary-sec2d: #007C80;
+$border-active-secondary-sec2d: #007C80;
+$pg-gray-10-sec2d: #F5EFE7;
+$pg-gray-20-sec2d: #D3BFA8;
+$pg-gray-30-sec2d: #B19E85;
+$pg-gray-60-sec2d: #5F4B32;
+$pg-gray-70-sec2d: #4A3B27;
+$pg-gray-80-sec2d: #352A1C;
+$pg-gray-100-sec2d: #201910;
+
+// Secondary 3 Mode variables
+$text-active-secondary-sec3: #E2F9FF;
+$text-inactive-secondary-sec3: #282C2E;
+$fill-neutral-primary-sec3: #2AB8E1;
+$fill-neutral-secondary-sec3: #E2F9FF;
+$border-active-primary-sec3: #2AB8E1;
+$border-active-secondary-sec3: #9EEBFF;
+$pg-gray-10-sec3: #2AB8E1;
+$pg-gray-20-sec3: #D3BFA8;
+$pg-gray-30-sec3: #B19E85;
+$pg-gray-60-sec3: #5F4B32;
+$pg-gray-70-sec3: #4A3B27;
+$pg-gray-80-sec3: #352A1C;
+$pg-gray-100-sec3: #201910;
+
+// Secondary 3 Mode Dark variables
+$text-active-secondary-sec3d: #E2F9FF;
+$text-inactive-secondary-sec3d: #E2F9FF;
+$fill-neutral-primary-sec3d: #062472;
+$fill-neutral-secondary-sec3d: #2C2C2C;
+$border-active-primary-sec3d: #062472;
+$border-active-secondary-sec3d: #00508F;
+$pg-gray-10-sec3d: #F5EFE7;
+$pg-gray-20-sec3d: #D3BFA8;
+$pg-gray-30-sec3d: #B19E85;
+$pg-gray-60-sec3d: #5F4B32;
+$pg-gray-70-sec3d: #4A3B27;
+$pg-gray-80-sec3d: #352A1C;
+$pg-gray-100-sec3d: #201910;
+
+// Default to light mode variables initially
+$text-active-secondary: $text-active-secondary-light;
+$text-inactive-secondary: $text-inactive-secondary-light;
+$fill-neutral-primary: $fill-neutral-primary-light;
+$fill-neutral-secondary: $fill-neutral-secondary-light;
+$border-active-primary: $border-active-primary-light;
+$border-active-secondary: $border-active-secondary-light;
+$pg-gray-10: $pg-gray-10-light;
+$pg-gray-20: $pg-gray-20-light;
+$pg-gray-30: $pg-gray-30-light;
+$pg-gray-60: $pg-gray-60-light;
+$pg-gray-70: $pg-gray-70-light;
+$pg-gray-80: $pg-gray-80-light;
+$pg-gray-100: $pg-gray-100-light;
+
+// Padding variables based on the provided measurements
+$padding-overall-sides: 24px;
+$padding-content-vertical: 20px;
+$padding-title-row: 12px;
+$padding-data-row: 16px;
+
+// Border radius
+$border-radius: 14px;
+
+// Typography variables
+$font-size-base: 16px;
+$line-height: 1.4; // 140%
+$char-spacing: -0.025em; // -2.5%
+
+// Custom fonts
+@mixin pg-font-label-m-normal {
+  font-family: 'Poppins', sans-serif !important;
+  font-size: $font-size-base !important;
+  font-weight: 600 !important; // Semibold
+  line-height: $line-height !important;
+  letter-spacing: $char-spacing !important;
+}
+
+@mixin pg-font-body-s-normal {
+  font-family: 'Inter', sans-serif !important;
+  font-size: $font-size-base !important;
+  font-weight: 400 !important; // Regular
+  line-height: $line-height !important;
+  letter-spacing: $char-spacing !important;
+}
+
+// Root variables for light mode
+:root {
+  --text-active-secondary: #{$text-active-secondary-light};
+  --text-inactive-secondary: #{$text-inactive-secondary-light};
+  --fill-neutral-primary: #{$fill-neutral-primary-light};
+  --fill-neutral-secondary: #{$fill-neutral-secondary-light};
+  --border-active-primary: #{$border-active-primary-light};
+  --border-active-secondary: #{$border-active-secondary-light};
+  --pg-gray-10: #{$pg-gray-10-light};
+  --pg-gray-20: #{$pg-gray-20-light};
+  --pg-gray-30: #{$pg-gray-30-light};
+  --pg-gray-60: #{$pg-gray-60-light};
+  --pg-gray-70: #{$pg-gray-70-light};
+  --pg-gray-80: #{$pg-gray-80-light};
+  --pg-gray-100: #{$pg-gray-100-light};
+}
+
+// Dark mode variables
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text-active-secondary: #{$text-active-secondary-dark};
+    --text-inactive-secondary: #{$text-inactive-secondary-dark};
+    --fill-neutral-primary: #{$fill-neutral-primary-dark};
+    --fill-neutral-secondary: #{$fill-neutral-secondary-dark};
+    --border-active-primary: #{$border-active-primary-dark};
+    --border-active-secondary: #{$border-active-secondary-dark};
+    --pg-gray-10: #{$pg-gray-10-dark};
+    --pg-gray-20: #{$pg-gray-20-dark};
+    --pg-gray-30: #{$pg-gray-30-dark};
+    --pg-gray-60: #{$pg-gray-60-dark};
+    --pg-gray-70: #{$pg-gray-70-dark};
+    --pg-gray-80: #{$pg-gray-80-dark};
+    --pg-gray-100: #{$pg-gray-100-dark};
+  }
+}
+
+// Table container styles - handles overall padding and rounded corners
+.table-container {
+  padding: $padding-content-vertical $padding-overall-sides !important;
+  border-radius: $border-radius !important;
+  overflow: hidden !important; // Ensures the border-radius is properly applied
+}
+
+table {
+  width: 100% !important;
+  border-collapse: separate !important; // Changed from collapse to separate for border-radius to work
+  border-spacing: 0 !important; // Ensures no gaps between cells
+  font-size: $font-size-base !important;
+  border-radius: $border-radius !important;
+  overflow: hidden !important; // Ensures content doesn't break the rounded corners
+  border: 1px solid var(--border-active-primary) !important; // Using CSS variable for dark mode support
+  
+  // Table Headers
+  th {
+    @include pg-font-label-m-normal;
+    background-color: var(--fill-neutral-primary) !important;
+    // border: 1px solid var(--border-active-primary) !important;
+    border: 1px solid var(--fill-neutral-primary) !important;
+    text-align: left !important;
+    color: var(--text-active-secondary) !important;
+    // Title row padding
+    padding: $padding-title-row !important;
+
+    .dt-column-order:before{
+      color: #fff;
+    }
+    .dt-column-order:after{
+      color: #fff;
+    }
+  }
+  
+  // Table Cells
+  td {
+    @include pg-font-body-s-normal;
+    border: 1px solid var(--border-active-primary) !important;
+    text-align: left !important;
+    color: var(--text-inactive-secondary) !important;
+    // Data row padding
+    padding: $padding-data-row !important;
+  }
+  
+  // Row styles
+  tr {
+    &:nth-child(even) {
+      background-color: var(--fill-neutral-secondary) !important;
+    }
+    
+    &:nth-child(odd) {
+      background-color: var(--fill-neutral-primary) !important;
+    }
+    td{
+      background-color: var(--fill-neutral-secondary) !important;
+    }
+    
+    // Title Row (first row)
+    &:first-child {
+      td {
+        // @include pg-font-label-m-normal;
+        // color: var(--text-active-secondary) !important;
+        padding-top: $padding-title-row !important;
+        padding-bottom: $padding-title-row !important;
+      }
+      
+      // Top row styling for rounded corners
+      th, td {
+        &:first-child {
+          // border-top-left-radius: $border-radius !important;
+        }
+        
+        &:last-child {
+          // border-top-right-radius: $border-radius !important;
+        }
+      }
+    }
+    
+    // Dark Divider Row
+    &:nth-child(2) {
+      // background-color: var(--pg-gray-100) !important;
+      height: 10px !important;
+    }
+    
+    // Title Row Background
+    &:nth-child(3) {
+      background-color: var(--pg-gray-10) !important;
+      
+      td {
+        // @include pg-font-label-m-normal;
+        padding-top: $padding-title-row !important;
+        padding-bottom: $padding-title-row !important;
+      }
+    }
+    
+    // Last row styling for rounded corners
+    &:last-child {
+      td, th {
+        &:first-child {
+          // border-bottom-left-radius: $border-radius !important;
+        }
+        
+        &:last-child {
+          // border-bottom-right-radius: $border-radius !important;
+        }
+      }
+    }
+  }
+}
+
+// Typography classes
+.pg-font-label-m-normal {
+  @include pg-font-label-m-normal;
+}
+
+.pg-font-body-s-normal {
+  @include pg-font-body-s-normal;
+}
+
+// Highlight Effect
+.highlight {
+  background-color: var(--pg-gray-30) !important;
+}
+
+// Button Style
+.button-token {
+  background-color: #00AA00 !important; // Keeping the button green in both modes
+  color: white !important;
+  font-weight: bold !important;
+  padding: 5px !important;
+  border-radius: 3px !important;
+}
+
+.elementor-shortcode{
+  .dt-layout-cell.dt-layout-full{
+    max-width: 100vw;
+    overflow-y: scroll !important;
+  }
+}
+.dt-paging {
+    nav{
+        border-radius: 20px;
+        background: #EBF0F5;
+        button{
+            &.dt-paging-button{
+                // border-radius: 50% !important;
+            }
+        }
+    }
+}
+
+// Class-based theme toggling (in addition to system preference)
+.light-mode {
+  --text-active-secondary: #{$text-active-secondary-light};
+  --text-inactive-secondary: #{$text-inactive-secondary-light};
+  --fill-neutral-primary: #{$fill-neutral-primary-light};
+  --fill-neutral-secondary: #{$fill-neutral-secondary-light};
+  --border-active-primary: #{$border-active-primary-light};
+  --border-active-secondary: #{$border-active-secondary-light};
+  --pg-gray-10: #{$pg-gray-10-light};
+  --pg-gray-20: #{$pg-gray-20-light};
+  --pg-gray-30: #{$pg-gray-30-light};
+  --pg-gray-60: #{$pg-gray-60-light};
+  --pg-gray-70: #{$pg-gray-70-light};
+  --pg-gray-80: #{$pg-gray-80-light};
+  --pg-gray-100: #{$pg-gray-100-light};
+}
+
+.dark-mode {
+  --text-active-secondary: #{$text-active-secondary-dark};
+  --text-inactive-secondary: #{$text-inactive-secondary-dark};
+  --fill-neutral-primary: #{$fill-neutral-primary-dark};
+  --fill-neutral-secondary: #{$fill-neutral-secondary-dark};
+  --border-active-primary: #{$border-active-primary-dark};
+  --border-active-secondary: #{$border-active-secondary-dark};
+  --pg-gray-10: #{$pg-gray-10-dark};
+  --pg-gray-20: #{$pg-gray-20-dark};
+  --pg-gray-30: #{$pg-gray-30-dark};
+  --pg-gray-60: #{$pg-gray-60-dark};
+  --pg-gray-70: #{$pg-gray-70-dark};
+  --pg-gray-80: #{$pg-gray-80-dark};
+  --pg-gray-100: #{$pg-gray-100-dark};
+}
+
+// High-Contrast Mode
+.primary-mode {
+  --text-active-secondary: #{$text-active-secondary-pr};
+  --text-inactive-secondary: #{$text-inactive-secondary-pr};
+  --fill-neutral-primary: #{$fill-neutral-primary-pr};
+  --fill-neutral-secondary: #{$fill-neutral-secondary-pr};
+  --border-active-primary: #{$border-active-primary-pr};
+  --border-active-secondary: #{$border-active-secondary-pr};
+  --pg-gray-10: #{$pg-gray-10-pr};
+  --pg-gray-20: #{$pg-gray-20-pr};
+  --pg-gray-30: #{$pg-gray-30-pr};
+  --pg-gray-60: #{$pg-gray-60-pr};
+  --pg-gray-70: #{$pg-gray-70-pr};
+  --pg-gray-80: #{$pg-gray-80-pr};
+  --pg-gray-100: #{$pg-gray-100-pr};
+
+  @media (prefers-color-scheme: dark) {
+      --text-active-secondary: #{$text-active-secondary-prd};
+      --text-inactive-secondary: #{$text-inactive-secondary-prd};
+      --fill-neutral-primary: #{$fill-neutral-primary-prd};
+      --fill-neutral-secondary: #{$fill-neutral-secondary-prd};
+      --border-active-primary: #{$border-active-primary-prd};
+      --border-active-secondary: #{$border-active-secondary-prd};
+      --pg-gray-10: #{$pg-gray-10-prd};
+      --pg-gray-20: #{$pg-gray-20-prd};
+      --pg-gray-30: #{$pg-gray-30-prd};
+      --pg-gray-60: #{$pg-gray-60-prd};
+      --pg-gray-70: #{$pg-gray-70-prd};
+      --pg-gray-80: #{$pg-gray-80-prd};
+      --pg-gray-100: #{$pg-gray-100-prd};
+  }
+  
+  // Override button style for better visibility in high contrast
+  .button-token {
+    background-color: #FFFFFF !important;
+    color: #000000 !important;
+    border: 2px solid #FFFFFF !important;
+  }
+}
+
+// secondary1 Mode
+.secondary1-mode {
+  --text-active-secondary: #{$text-active-secondary-sec1};
+  --text-inactive-secondary: #{$text-inactive-secondary-sec1};
+  --fill-neutral-primary: #{$fill-neutral-primary-sec1};
+  --fill-neutral-secondary: #{$fill-neutral-secondary-sec1};
+  --border-active-primary: #{$border-active-primary-sec1};
+  --border-active-secondary: #{$border-active-secondary-sec1};
+  --pg-gray-10: #{$pg-gray-10-sec1};
+  --pg-gray-20: #{$pg-gray-20-sec1};
+  --pg-gray-30: #{$pg-gray-30-sec1};
+  --pg-gray-60: #{$pg-gray-60-sec1};
+  --pg-gray-70: #{$pg-gray-70-sec1};
+  --pg-gray-80: #{$pg-gray-80-sec1};
+  --pg-gray-100: #{$pg-gray-100-sec1};
+
+  @media (prefers-color-scheme: dark) {
+      --text-active-secondary: #{$text-active-secondary-sec1d};
+      --text-inactive-secondary: #{$text-inactive-secondary-sec1d};
+      --fill-neutral-primary: #{$fill-neutral-primary-sec1d};
+      --fill-neutral-secondary: #{$fill-neutral-secondary-sec1d};
+      --border-active-primary: #{$border-active-primary-sec1d};
+      --border-active-secondary: #{$border-active-secondary-sec1d};
+      --pg-gray-10: #{$pg-gray-10-sec1d};
+      --pg-gray-20: #{$pg-gray-20-sec1d};
+      --pg-gray-30: #{$pg-gray-30-sec1d};
+      --pg-gray-60: #{$pg-gray-60-sec1d};
+      --pg-gray-70: #{$pg-gray-70-sec1d};
+      --pg-gray-80: #{$pg-gray-80-sec1d};
+      --pg-gray-100: #{$pg-gray-100-sec1d};
+  }
+  
+  // Override button style for sec1 theme
+  .button-token {
+    background-color: #8B5A2B !important;
+    color: #FEF9F0 !important;
+  }
+  
+  // Override paging navigation for sec1 theme
+  .dt-paging {
+    nav {
+      background: #E8DCCA;
+    }
+  }
+}
+// 2
+.secondary2-mode {
+  --text-active-secondary: #{$text-active-secondary-sec2};
+  --text-inactive-secondary: #{$text-inactive-secondary-sec2};
+  --fill-neutral-primary: #{$fill-neutral-primary-sec2};
+  --fill-neutral-secondary: #{$fill-neutral-secondary-sec2};
+  --border-active-primary: #{$border-active-primary-sec2};
+  --border-active-secondary: #{$border-active-secondary-sec2};
+  --pg-gray-10: #{$pg-gray-10-sec2};
+  --pg-gray-20: #{$pg-gray-20-sec2};
+  --pg-gray-30: #{$pg-gray-30-sec2};
+  --pg-gray-60: #{$pg-gray-60-sec2};
+  --pg-gray-70: #{$pg-gray-70-sec2};
+  --pg-gray-80: #{$pg-gray-80-sec2};
+  --pg-gray-100: #{$pg-gray-100-sec2};
+
+  @media (prefers-color-scheme: dark) {
+      --text-active-secondary: #{$text-active-secondary-sec2d};
+      --text-inactive-secondary: #{$text-inactive-secondary-sec2d};
+      --fill-neutral-primary: #{$fill-neutral-primary-sec2d};
+      --fill-neutral-secondary: #{$fill-neutral-secondary-sec2d};
+      --border-active-primary: #{$border-active-primary-sec2d};
+      --border-active-secondary: #{$border-active-secondary-sec2d};
+      --pg-gray-10: #{$pg-gray-10-sec2d};
+      --pg-gray-20: #{$pg-gray-20-sec2d};
+      --pg-gray-30: #{$pg-gray-30-sec2d};
+      --pg-gray-60: #{$pg-gray-60-sec2d};
+      --pg-gray-70: #{$pg-gray-70-sec2d};
+      --pg-gray-80: #{$pg-gray-80-sec2d};
+      --pg-gray-100: #{$pg-gray-100-sec2d};
+  }
+  
+  // Override button style for sec1 theme
+  .button-token {
+    background-color: #8B5A2B !important;
+    color: #FEF9F0 !important;
+  }
+  
+  // Override paging navigation for sec1 theme
+  .dt-paging {
+    nav {
+      background: #E8DCCA;
+    }
+  }
+}
+// 3
+.secondary3-mode {
+  --text-active-secondary: #{$text-active-secondary-sec3};
+  --text-inactive-secondary: #{$text-inactive-secondary-sec3};
+  --fill-neutral-primary: #{$fill-neutral-primary-sec3};
+  --fill-neutral-secondary: #{$fill-neutral-secondary-sec3};
+  --border-active-primary: #{$border-active-primary-sec3};
+  --border-active-secondary: #{$border-active-secondary-sec3};
+  --pg-gray-10: #{$pg-gray-10-sec3};
+  --pg-gray-20: #{$pg-gray-20-sec3};
+  --pg-gray-30: #{$pg-gray-30-sec3};
+  --pg-gray-60: #{$pg-gray-60-sec3};
+  --pg-gray-70: #{$pg-gray-70-sec3};
+  --pg-gray-80: #{$pg-gray-80-sec3};
+  --pg-gray-100: #{$pg-gray-100-sec3};
+
+  @media (prefers-color-scheme: dark) {
+      --text-active-secondary: #{$text-active-secondary-sec3d};
+      --text-inactive-secondary: #{$text-inactive-secondary-sec3d};
+      --fill-neutral-primary: #{$fill-neutral-primary-sec3d};
+      --fill-neutral-secondary: #{$fill-neutral-secondary-sec3d};
+      --border-active-primary: #{$border-active-primary-sec3d};
+      --border-active-secondary: #{$border-active-secondary-sec3d};
+      --pg-gray-10: #{$pg-gray-10-sec3d};
+      --pg-gray-20: #{$pg-gray-20-sec3d};
+      --pg-gray-30: #{$pg-gray-30-sec3d};
+      --pg-gray-60: #{$pg-gray-60-sec3d};
+      --pg-gray-70: #{$pg-gray-70-sec3d};
+      --pg-gray-80: #{$pg-gray-80-sec3d};
+      --pg-gray-100: #{$pg-gray-100-sec3d};
+  }
+  
+  // Override button style for sec1 theme
+  .button-token {
+    background-color: #8B5A2B !important;
+    color: #FEF9F0 !important;
+  }
+  
+  // Override paging navigation for sec1 theme
+  .dt-paging {
+    nav {
+      background: #E8DCCA;
+    }
+  }
+}

@@ -1,0 +1,285 @@
+// Base variables - Light Mode
+$text-active-secondary-light: #3E4246;
+$text-inactive-secondary-light: #282C2E;
+$fill-neutral-primary-light: #EEF1F5;
+$fill-neutral-secondary-light: #FFFFFF;
+$border-active-primary-light: #C1C9D2;
+$border-active-secondary-light: #EEF1F5;
+$pg-gray-10-light: #EEF1F5;
+$pg-gray-20-light: #C1C9D2;
+$pg-gray-30-light: #A7B0B8;
+$pg-gray-60-light: #3E4246;
+$pg-gray-70-light: #282C2E;
+$pg-gray-80-light: #1C1F22;
+$pg-gray-100-light: #040506;
+
+// Dark Mode variables
+$text-active-secondary-dark: #D1D5DB;
+$text-inactive-secondary-dark: #9CA3AF;
+$fill-neutral-primary-dark: #1F2937;
+$fill-neutral-secondary-dark: #111827;
+$border-active-primary-dark: #4B5563;
+$border-active-secondary-dark: #374151;
+$pg-gray-10-dark: #1F2937;
+$pg-gray-20-dark: #4B5563;
+$pg-gray-30-dark: #6B7280;
+$pg-gray-60-dark: #D1D5DB;
+$pg-gray-70-dark: #E5E7EB;
+$pg-gray-80-dark: #F3F4F6;
+$pg-gray-100-dark: #F9FAFB;
+
+// Default to light mode variables initially
+$text-active-secondary: $text-active-secondary-light;
+$text-inactive-secondary: $text-inactive-secondary-light;
+$fill-neutral-primary: $fill-neutral-primary-light;
+$fill-neutral-secondary: $fill-neutral-secondary-light;
+$border-active-primary: $border-active-primary-light;
+$border-active-secondary: $border-active-secondary-light;
+$pg-gray-10: $pg-gray-10-light;
+$pg-gray-20: $pg-gray-20-light;
+$pg-gray-30: $pg-gray-30-light;
+$pg-gray-60: $pg-gray-60-light;
+$pg-gray-70: $pg-gray-70-light;
+$pg-gray-80: $pg-gray-80-light;
+$pg-gray-100: $pg-gray-100-light;
+
+// Padding variables based on the provided measurements
+$padding-overall-sides: 24px;
+$padding-content-vertical: 20px;
+$padding-title-row: 12px;
+$padding-data-row: 16px;
+
+// Border radius
+$border-radius: 14px;
+
+// Typography variables
+$font-size-base: 16px;
+$line-height: 1.4; // 140%
+$char-spacing: -0.025em; // -2.5%
+
+// Custom fonts
+@mixin pg-font-label-m-normal {
+  font-family: 'Poppins', sans-serif !important;
+  font-size: $font-size-base !important;
+  font-weight: 600 !important; // Semibold
+  line-height: $line-height !important;
+  letter-spacing: $char-spacing !important;
+}
+
+@mixin pg-font-body-s-normal {
+  font-family: 'Inter', sans-serif !important;
+  font-size: $font-size-base !important;
+  font-weight: 400 !important; // Regular
+  line-height: $line-height !important;
+  letter-spacing: $char-spacing !important;
+}
+
+// Root variables for light mode
+:root {
+  --text-active-secondary: #{$text-active-secondary-light};
+  --text-inactive-secondary: #{$text-inactive-secondary-light};
+  --fill-neutral-primary: #{$fill-neutral-primary-light};
+  --fill-neutral-secondary: #{$fill-neutral-secondary-light};
+  --border-active-primary: #{$border-active-primary-light};
+  --border-active-secondary: #{$border-active-secondary-light};
+  --pg-gray-10: #{$pg-gray-10-light};
+  --pg-gray-20: #{$pg-gray-20-light};
+  --pg-gray-30: #{$pg-gray-30-light};
+  --pg-gray-60: #{$pg-gray-60-light};
+  --pg-gray-70: #{$pg-gray-70-light};
+  --pg-gray-80: #{$pg-gray-80-light};
+  --pg-gray-100: #{$pg-gray-100-light};
+}
+
+// Dark mode variables
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text-active-secondary: #{$text-active-secondary-dark};
+    --text-inactive-secondary: #{$text-inactive-secondary-dark};
+    --fill-neutral-primary: #{$fill-neutral-primary-dark};
+    --fill-neutral-secondary: #{$fill-neutral-secondary-dark};
+    --border-active-primary: #{$border-active-primary-dark};
+    --border-active-secondary: #{$border-active-secondary-dark};
+    --pg-gray-10: #{$pg-gray-10-dark};
+    --pg-gray-20: #{$pg-gray-20-dark};
+    --pg-gray-30: #{$pg-gray-30-dark};
+    --pg-gray-60: #{$pg-gray-60-dark};
+    --pg-gray-70: #{$pg-gray-70-dark};
+    --pg-gray-80: #{$pg-gray-80-dark};
+    --pg-gray-100: #{$pg-gray-100-dark};
+  }
+}
+
+// Table container styles - handles overall padding and rounded corners
+.table-container {
+  padding: $padding-content-vertical $padding-overall-sides !important;
+  border-radius: $border-radius !important;
+  overflow: hidden !important; // Ensures the border-radius is properly applied
+}
+
+table {
+  width: 100% !important;
+  border-collapse: separate !important; // Changed from collapse to separate for border-radius to work
+  border-spacing: 0 !important; // Ensures no gaps between cells
+  font-size: $font-size-base !important;
+  border-radius: $border-radius !important;
+  overflow: hidden !important; // Ensures content doesn't break the rounded corners
+  border: 1px solid var(--border-active-primary) !important; // Using CSS variable for dark mode support
+  
+  // Table Headers
+  th {
+    @include pg-font-label-m-normal;
+    background-color: var(--fill-neutral-primary) !important;
+    border: 1px solid var(--border-active-primary) !important;
+    text-align: left !important;
+    color: var(--text-active-secondary) !important;
+    // Title row padding
+    padding: $padding-title-row !important;
+  }
+  
+  // Table Cells
+  td {
+    @include pg-font-body-s-normal;
+    border: 1px solid var(--border-active-primary) !important;
+    text-align: left !important;
+    color: var(--text-inactive-secondary) !important;
+    // Data row padding
+    padding: $padding-data-row !important;
+  }
+  
+  // Row styles
+  tr {
+    &:nth-child(even) {
+      background-color: var(--fill-neutral-secondary) !important;
+    }
+    
+    &:nth-child(odd) {
+      background-color: var(--fill-neutral-primary) !important;
+    }
+    td{
+      background-color: var(--fill-neutral-secondary) !important;
+    }
+    
+    // Title Row (first row)
+    &:first-child {
+      td {
+        // @include pg-font-label-m-normal;
+        // color: var(--text-active-secondary) !important;
+        padding-top: $padding-title-row !important;
+        padding-bottom: $padding-title-row !important;
+      }
+      
+      // Top row styling for rounded corners
+      th, td {
+        &:first-child {
+          // border-top-left-radius: $border-radius !important;
+        }
+        
+        &:last-child {
+          // border-top-right-radius: $border-radius !important;
+        }
+      }
+    }
+    
+    // Dark Divider Row
+    &:nth-child(2) {
+      // background-color: var(--pg-gray-100) !important;
+      height: 10px !important;
+    }
+    
+    // Title Row Background
+    &:nth-child(3) {
+      background-color: var(--pg-gray-10) !important;
+      
+      td {
+        // @include pg-font-label-m-normal;
+        padding-top: $padding-title-row !important;
+        padding-bottom: $padding-title-row !important;
+      }
+    }
+    
+    // Last row styling for rounded corners
+    &:last-child {
+      td, th {
+        &:first-child {
+          // border-bottom-left-radius: $border-radius !important;
+        }
+        
+        &:last-child {
+          // border-bottom-right-radius: $border-radius !important;
+        }
+      }
+    }
+  }
+}
+
+// Typography classes
+.pg-font-label-m-normal {
+  @include pg-font-label-m-normal;
+}
+
+.pg-font-body-s-normal {
+  @include pg-font-body-s-normal;
+}
+
+// Highlight Effect
+.highlight {
+  background-color: var(--pg-gray-30) !important;
+}
+
+// Button Style
+.button-token {
+  background-color: #00AA00 !important; // Keeping the button green in both modes
+  color: white !important;
+  font-weight: bold !important;
+  padding: 5px !important;
+  border-radius: 3px !important;
+}
+
+.elementor-shortcode{
+    overflow-y: scroll;
+}
+.dt-paging {
+    nav{
+        border-radius: 20px;
+        background: #EBF0F5;
+        button{
+            &.dt-paging-button{
+                border-radius: 50% !important;
+            }
+        }
+    }
+}
+
+// Class-based theme toggling (in addition to system preference)
+.light-mode {
+  --text-active-secondary: #{$text-active-secondary-light};
+  --text-inactive-secondary: #{$text-inactive-secondary-light};
+  --fill-neutral-primary: #{$fill-neutral-primary-light};
+  --fill-neutral-secondary: #{$fill-neutral-secondary-light};
+  --border-active-primary: #{$border-active-primary-light};
+  --border-active-secondary: #{$border-active-secondary-light};
+  --pg-gray-10: #{$pg-gray-10-light};
+  --pg-gray-20: #{$pg-gray-20-light};
+  --pg-gray-30: #{$pg-gray-30-light};
+  --pg-gray-60: #{$pg-gray-60-light};
+  --pg-gray-70: #{$pg-gray-70-light};
+  --pg-gray-80: #{$pg-gray-80-light};
+  --pg-gray-100: #{$pg-gray-100-light};
+}
+
+.dark-mode {
+  --text-active-secondary: #{$text-active-secondary-dark};
+  --text-inactive-secondary: #{$text-inactive-secondary-dark};
+  --fill-neutral-primary: #{$fill-neutral-primary-dark};
+  --fill-neutral-secondary: #{$fill-neutral-secondary-dark};
+  --border-active-primary: #{$border-active-primary-dark};
+  --border-active-secondary: #{$border-active-secondary-dark};
+  --pg-gray-10: #{$pg-gray-10-dark};
+  --pg-gray-20: #{$pg-gray-20-dark};
+  --pg-gray-30: #{$pg-gray-30-dark};
+  --pg-gray-60: #{$pg-gray-60-dark};
+  --pg-gray-70: #{$pg-gray-70-dark};
+  --pg-gray-80: #{$pg-gray-80-dark};
+  --pg-gray-100: #{$pg-gray-100-dark};
+}
