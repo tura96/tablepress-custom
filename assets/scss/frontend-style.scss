@@ -3,8 +3,9 @@ $text-active-secondary-light: #3E4246;
 $text-inactive-secondary-light: #282C2E;
 $fill-neutral-primary-light: #EEF1F5;
 $fill-neutral-secondary-light: #FFFFFF;
-$border-active-primary-light: #C1C9D2;
+$border-active-primary-light: #EEF1F5;
 $border-active-secondary-light: #EEF1F5;
+$button-light: #E03C31;
 $pg-gray-10-light: #EEF1F5;
 $pg-gray-20-light: #C1C9D2;
 $pg-gray-30-light: #A7B0B8;
@@ -20,6 +21,7 @@ $fill-neutral-primary-dark: #040506;
 $fill-neutral-secondary-dark: #1C1F22;
 $border-active-primary-dark: #4B5563;
 $border-active-secondary-dark: #282C2E;
+$button-dark: #E03C31;
 $pg-gray-10-dark: #1F2937;
 $pg-gray-20-dark: #4B5563;
 $pg-gray-30-dark: #6B7280;
@@ -35,6 +37,7 @@ $fill-neutral-primary-pr: #E03C31;
 $fill-neutral-secondary-pr: #FFFFFF;
 $border-active-primary-pr: #FFC7C3;
 $border-active-secondary-pr: #888888;
+$button-pr: #E03C31;
 $pg-gray-10-pr: #000000;
 $pg-gray-20-pr: #333333;
 $pg-gray-30-pr: #666666;
@@ -50,6 +53,7 @@ $fill-neutral-primary-prd: #74150F;
 $fill-neutral-secondary-prd: #1C1F22;
 $border-active-primary-prd: #C1C9D2;
 $border-active-secondary-prd: #888888;
+$button-prd: #E03C31;
 $pg-gray-10-prd: #000000;
 $pg-gray-20-prd: #333333;
 $pg-gray-30-prd: #666666;
@@ -65,6 +69,7 @@ $fill-neutral-primary-sec1: #E3AA49;
 $fill-neutral-secondary-sec1: #FFF8E7;
 $border-active-primary-sec1: #E3AA49;
 $border-active-secondary-sec1: #FAD48D;
+$button-sec1: #E3AA49;
 $pg-gray-10-sec1: #F5EFE7;
 $pg-gray-20-sec1: #D3BFA8;
 $pg-gray-30-sec1: #B19E85;
@@ -80,6 +85,7 @@ $fill-neutral-primary-sec1d: #A6732B;
 $fill-neutral-secondary-sec1d: #44311B;
 $border-active-primary-sec1d: #A6732B;
 $border-active-secondary-sec1d: #A6732B;
+$button-sec1d: #E3AA49;
 $pg-gray-10-sec1d: #F5EFE7;
 $pg-gray-20-sec1d: #D3BFA8;
 $pg-gray-30-sec1d: #B19E85;
@@ -95,6 +101,7 @@ $fill-neutral-primary-sec2: #00CCCC;
 $fill-neutral-secondary-sec2: #E8FEFF;
 $border-active-primary-sec2: #00CCCC;
 $border-active-secondary-sec2: #9EE5E8;
+$button-sec2: #007C80;
 $pg-gray-10-sec2: #F5EFE7;
 $pg-gray-20-sec2: #D3BFA8;
 $pg-gray-30-sec2: #B19E85;
@@ -110,6 +117,7 @@ $fill-neutral-primary-sec2d: #007C80;
 $fill-neutral-secondary-sec2d: #153947;
 $border-active-primary-sec2d: #007C80;
 $border-active-secondary-sec2d: #007C80;
+$button-sec2d: #007C80;
 $pg-gray-10-sec2d: #F5EFE7;
 $pg-gray-20-sec2d: #D3BFA8;
 $pg-gray-30-sec2d: #B19E85;
@@ -125,6 +133,7 @@ $fill-neutral-primary-sec3: #2AB8E1;
 $fill-neutral-secondary-sec3: #E2F9FF;
 $border-active-primary-sec3: #2AB8E1;
 $border-active-secondary-sec3: #9EEBFF;
+$button-sec3: #00508F;
 $pg-gray-10-sec3: #2AB8E1;
 $pg-gray-20-sec3: #D3BFA8;
 $pg-gray-30-sec3: #B19E85;
@@ -140,6 +149,7 @@ $fill-neutral-primary-sec3d: #062472;
 $fill-neutral-secondary-sec3d: #2C2C2C;
 $border-active-primary-sec3d: #062472;
 $border-active-secondary-sec3d: #00508F;
+$button-sec3d: #00508F;
 $pg-gray-10-sec3d: #F5EFE7;
 $pg-gray-20-sec3d: #D3BFA8;
 $pg-gray-30-sec3d: #B19E85;
@@ -162,15 +172,17 @@ $pg-gray-60: $pg-gray-60-light;
 $pg-gray-70: $pg-gray-70-light;
 $pg-gray-80: $pg-gray-80-light;
 $pg-gray-100: $pg-gray-100-light;
+$button: $button-light;
 
 // Padding variables based on the provided measurements
 $padding-overall-sides: 24px;
 $padding-content-vertical: 20px;
 $padding-title-row: 12px;
-$padding-data-row: 16px;
+$padding-data-row: 16px 20px;
 
 // Border radius
-$border-radius: 14px;
+// $border-radius: 14px;
+$border-radius: 0px;
 
 // Typography variables
 $font-size-base: 16px;
@@ -209,6 +221,7 @@ $char-spacing: -0.025em; // -2.5%
   --pg-gray-70: #{$pg-gray-70-light};
   --pg-gray-80: #{$pg-gray-80-light};
   --pg-gray-100: #{$pg-gray-100-light};
+  --button:#{$button-light};
 }
 
 // Dark mode variables
@@ -227,6 +240,7 @@ $char-spacing: -0.025em; // -2.5%
     --pg-gray-70: #{$pg-gray-70-dark};
     --pg-gray-80: #{$pg-gray-80-dark};
     --pg-gray-100: #{$pg-gray-100-dark};
+    --button:#{$button-dark};
   }
 }
 
@@ -237,7 +251,7 @@ $char-spacing: -0.025em; // -2.5%
   overflow: hidden !important; // Ensures the border-radius is properly applied
 }
 
-table {
+table.tablepress {
   width: 100% !important;
   border-collapse: separate !important; // Changed from collapse to separate for border-radius to work
   border-spacing: 0 !important; // Ensures no gaps between cells
@@ -256,12 +270,25 @@ table {
     color: var(--text-active-secondary) !important;
     // Title row padding
     padding: $padding-title-row !important;
+    padding-right: 20px !important;
 
     .dt-column-order:before{
       color: #fff;
+      content: '' !important;
+      height: 21px;
+      width: 21px;
+      background-image: url('../image/sort.png');
+      opacity: 1 !important;
+      bottom: 25% !important;
     }
     .dt-column-order:after{
       color: #fff;
+      content: '' !important;
+      height: 21px;
+      width: 21px;
+      background-image: url('../image/sort.png');
+      opacity: 1 !important;
+      display: none !important
     }
   }
   
@@ -273,6 +300,55 @@ table {
     color: var(--text-inactive-secondary) !important;
     // Data row padding
     padding: $padding-data-row !important;
+    svg#Layer_1 {
+      height: 15px;
+      width: 15px;
+    }
+    .cls-1 {
+      fill: var(--button);
+    }
+    .tablepress-toggle-1 {
+      fill: var(--button);
+    }
+    .tablepress-toggle-2 {
+      fill: var(--button);
+      stroke: var(--button);
+    }
+    .tablepress-label.tablepress-label-label,.tablepress-custom-checkbox,.tablepress-custom-radio,.tablepress-custom-toggle{
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        gap: 3px;
+        .label-icon{
+          background-color: var(--button) ;
+        }
+    }
+    .tablepress-custom-toggle{
+      svg#Layer_1 {
+        height: 20px;
+        width: 30px;
+      }
+    }
+    .tablepress-custom-radio.radio-checked{
+      .radio-icon{
+        svg{
+          rect{
+            stroke: var(--button);
+          }
+          circle{
+            fill: var(--button);
+          }
+        }
+      }
+    }
+
+    .checkbox-icon{
+      // background-image: url('../image/checkbox.svg');
+    }
+    p{
+      margin: 0 !important;
+      padding: 0 !important;
+    }
   }
   
   // Row styles
@@ -339,6 +415,22 @@ table {
       }
     }
   }
+  .oa-label{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    label{
+      gap: 5px;
+      border-width: 1px;
+      padding-top: 5px;
+      padding-right: 7px;
+      padding-bottom: 5px;
+      padding-left: 7px;
+      border-radius: 5px;
+      border-color: #CCCCCC;
+    }
+  }
 }
 
 // Typography classes
@@ -371,15 +463,42 @@ table {
   }
 }
 .dt-paging {
+    background-color: var(--fill-neutral-primary) !important;
+    color: var(--text-active-secondary) !important;
     nav{
         border-radius: 20px;
-        background: #EBF0F5;
+        // background: #EBF0F5;
         button{
             &.dt-paging-button{
                 // border-radius: 50% !important;
+                background: var(--fill-neutral-primary) !important;
+                color: var(--text-active-secondary) !important;
+                border: none !important;
+                font-size: 16px !important;
             }
         }
     }
+}
+.dt-info{
+  background-color: var(--fill-neutral-primary) ;
+  color: var(--text-active-secondary);
+  font-size: 16px;
+  padding: 6px;
+}
+.dt-length{
+  color: var(--fill-neutral-primary) !important;
+}
+.dt-search{
+  color: var(--fill-neutral-primary) !important;
+}
+.dt-input{
+  color: var(--fill-neutral-primary) !important;
+}
+.toggle-track{
+  height: 19px;
+}
+.dt-layout-row .dt-layout-table{
+  overflow: scroll;
 }
 
 // Class-based theme toggling (in addition to system preference)
@@ -397,6 +516,7 @@ table {
   --pg-gray-70: #{$pg-gray-70-light};
   --pg-gray-80: #{$pg-gray-80-light};
   --pg-gray-100: #{$pg-gray-100-light};
+  --button:#{$button-light};
 }
 
 .dark-mode {
@@ -413,6 +533,7 @@ table {
   --pg-gray-70: #{$pg-gray-70-dark};
   --pg-gray-80: #{$pg-gray-80-dark};
   --pg-gray-100: #{$pg-gray-100-dark};
+  --button:#{$button-dark};
 }
 
 // High-Contrast Mode
@@ -430,6 +551,7 @@ table {
   --pg-gray-70: #{$pg-gray-70-pr};
   --pg-gray-80: #{$pg-gray-80-pr};
   --pg-gray-100: #{$pg-gray-100-pr};
+  --button:#{$button-pr};
 
   @media (prefers-color-scheme: dark) {
       --text-active-secondary: #{$text-active-secondary-prd};
@@ -445,6 +567,7 @@ table {
       --pg-gray-70: #{$pg-gray-70-prd};
       --pg-gray-80: #{$pg-gray-80-prd};
       --pg-gray-100: #{$pg-gray-100-prd};
+      --button:#{$button-pr};
   }
   
   // Override button style for better visibility in high contrast
@@ -454,7 +577,6 @@ table {
     border: 2px solid #FFFFFF !important;
   }
 }
-
 // secondary1 Mode
 .secondary1-mode {
   --text-active-secondary: #{$text-active-secondary-sec1};
@@ -470,6 +592,8 @@ table {
   --pg-gray-70: #{$pg-gray-70-sec1};
   --pg-gray-80: #{$pg-gray-80-sec1};
   --pg-gray-100: #{$pg-gray-100-sec1};
+  --button:#{$button-sec1};
+
 
   @media (prefers-color-scheme: dark) {
       --text-active-secondary: #{$text-active-secondary-sec1d};
@@ -485,6 +609,8 @@ table {
       --pg-gray-70: #{$pg-gray-70-sec1d};
       --pg-gray-80: #{$pg-gray-80-sec1d};
       --pg-gray-100: #{$pg-gray-100-sec1d};
+  --button:#{$button-sec1};
+
   }
   
   // Override button style for sec1 theme
@@ -515,6 +641,8 @@ table {
   --pg-gray-70: #{$pg-gray-70-sec2};
   --pg-gray-80: #{$pg-gray-80-sec2};
   --pg-gray-100: #{$pg-gray-100-sec2};
+  --button:#{$button-sec2};
+
 
   @media (prefers-color-scheme: dark) {
       --text-active-secondary: #{$text-active-secondary-sec2d};
@@ -530,6 +658,8 @@ table {
       --pg-gray-70: #{$pg-gray-70-sec2d};
       --pg-gray-80: #{$pg-gray-80-sec2d};
       --pg-gray-100: #{$pg-gray-100-sec2d};
+  --button:#{$button-sec2};
+
   }
   
   // Override button style for sec1 theme
@@ -560,6 +690,8 @@ table {
   --pg-gray-70: #{$pg-gray-70-sec3};
   --pg-gray-80: #{$pg-gray-80-sec3};
   --pg-gray-100: #{$pg-gray-100-sec3};
+  --button:#{$button-sec3};
+
 
   @media (prefers-color-scheme: dark) {
       --text-active-secondary: #{$text-active-secondary-sec3d};
@@ -575,6 +707,7 @@ table {
       --pg-gray-70: #{$pg-gray-70-sec3d};
       --pg-gray-80: #{$pg-gray-80-sec3d};
       --pg-gray-100: #{$pg-gray-100-sec3d};
+  --button:#{$button-sec3};
   }
   
   // Override button style for sec1 theme
